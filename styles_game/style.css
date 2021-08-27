@@ -1,0 +1,103 @@
+
+@font-face {
+font-family: 'Games Regular';
+font-style: normal;
+font-weight: normal;
+src: local('Games Regular'), url('Games.woff') format('woff');
+}
+
+
+body{
+    text-align: center;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(13,201,174,1) 35%, rgba(0,212,255,1) 100%);
+    color: black;
+    font-family: 'Games Regular';
+}
+#container{
+    display: inline-block;
+    width: 320px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation-name: changewidth;
+    animation-duration: 0.5s
+    
+}
+.square{
+ 
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+
+}
+
+.x{
+    position: relative;
+}
+.x::after{
+    position: absolute;
+    content: "\274C";
+    font-size: 50px;
+    line-height: 100px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+
+}
+.o{
+    position: relative;
+}
+.o::after{
+    position: absolute;
+    content: "\2B55";
+    font-size: 50px;
+    line-height: 100px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+
+}
+canvas{
+    background: linear-gradient(90deg, rgb(11, 85, 107) 0%, rgba(13,201,174,1) 35%, rgba(0,212,255,1) 100%);
+    border: solid black 2px;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation-name: changewidth;
+    animation-duration: 0.5s
+}
+
+@keyframes changewidth{
+    from {height: 0px; width: 320px;}
+    to {height: 320px; width: 320px;}
+}
+.HUD{
+    font-size: 26px;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform:translate(-50%);
+    
+}
+.players{
+    display: inline-block;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+.botao{
+    height: 80px;
+    margin-bottom: 50px;
+    font-family: 'Games Regular';
+    
+    
+}
+.botao:hover{
+    cursor: pointer;
+}

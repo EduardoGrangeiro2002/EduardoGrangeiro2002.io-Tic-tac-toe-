@@ -1,0 +1,73 @@
+@font-face {
+    font-family: 'Games Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Games Regular'), url('Games.woff') format('woff');
+    }
+
+
+
+body{
+    text-align: center  ;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(13,201,174,1) 35%, rgba(0,212,255,1) 100%);
+    color: white;
+    font-family: 'Games Regular';
+}
+#container{
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%,-50%);
+}
+.o{
+    display: inline-block;
+    font-size: 70px;
+}
+.x{
+    display: inline-block;
+    font-size: 70px;
+}
+.o::after{
+    content: "\2B55" ;
+    
+}
+.x::after{
+    content: "\274C";
+}
+#icon{
+    margin-right: 5px;
+    top: 5px;
+}
+.btn{
+    display: block;
+    color: white;
+    font-size: 30px;
+    width: 150px;
+    height: 100px;
+    margin-top: 20px;
+    width: 600px;
+    background-color: rgba(0, 0, 0,0.2);
+    border: solid 4px white;
+    border-radius: 16px;
+    font-family: 'Games Regular';
+    
+}
+.btn:hover{
+    cursor: pointer;
+  
+}
+#canvas{
+  
+    display: inline-block;
+    width: 100%;
+    Height: 100%;
+    position: absolute;
+     top: 0;
+     left: 0;
+  
+}
+a{
+    text-decoration: none;
+}
+
